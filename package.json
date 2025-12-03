@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "bot": "node src/index.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.18.0",
+    "@supabase/supabase-js": "^2.78.0",
+    "debug": "^4.4.3",
+    "discord-html-transcripts": "3.2.0",
+    "discord.js": "14.25.1",
+    "dotenv": "^16.4.7",
+    "octokit": "^5.0.5"
+  }
+}

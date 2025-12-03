@@ -1,0 +1,5 @@
+.env
+node_modules/
+src/assets/Lofi.mp3
+pnpm-lock.yaml
+package-lock.json
