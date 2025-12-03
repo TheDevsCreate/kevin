@@ -20,6 +20,7 @@ git clone https://github.com/TheDevsCreate/kevin.git
 <details>
 <summary><b>NPM Users</b></summary>
 <br>
+
 ```bash
 npm install && npm run bot
 ```
@@ -28,6 +29,7 @@ npm install && npm run bot
 <details>
 <summary><b>PNPM Users</b></summary>
 <br>
+
 ```bash
 pnpm install && pnpm bot
 ```
