@@ -1,5 +1,5 @@
-## Kevin from DC
-my sweet pookie bear 😍😘
+## ✨ Kevin from DC
+the best discord bot ever!! 🔥
 
 hi everyone!1!1 this the **open source** code for kevin!<br>
 the best discord bot in the world, better than **sapphire**, **rat6**, and **karl bot** :D
@@ -8,7 +8,31 @@ please note that this bot was intensely developed by uhalexz uhalexz only. there
 totally ;)
 
 ## 🔨 How to Use 
-does it really look like i know- like genuinely i have no fucking idea just figure it out tbh
+<b>1.</b> Clone this repository or download as a .zip:
+```bash
+git clone https://github.com/TheDevsCreate/kevin.git
+```
+
+<b>2.</b> Setup all of the configuration in `config.json` and `.env`!
+
+<b>3.</b> Run this command:
+
+<details>
+<summary><b>NPM Users</b></summary>
+<br>
+```bash
+npm install && npm run bot
+```
+</details>
+
+<details>
+<summary><b>PNPM Users</b></summary>
+<br>
+```bash
+pnpm install && pnpm bot
+```
+</details>
+
 
 ## 💖 Credits
 <ol>
