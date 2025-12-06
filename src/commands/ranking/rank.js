@@ -11,8 +11,8 @@ module.exports = {
             required: true,
             type: ApplicationCommandOptionType.String,
             choices: [
-                { name: '🔽 Demote a user', value: 'demote' },
                 { name: '🔼 Promote a user', value: 'promote' },
+                { name: '🔽 Demote a user',  value: 'demote'  }
             ]
         },
         {
@@ -40,6 +40,18 @@ module.exports = {
         const staffServer = client.guilds.cache.get('1429560483723218976');
 
         const staffHierarchy = [
+            {
+                name: 'Owner',
+                roleIds: {staff: '1429923266528673792', main:'1429153660964962395'}
+            },
+            {
+                name: 'Management',
+                roleIds: {staff: '1429923267161886770', main:'1429153661417685163'}
+            },
+            {
+                name: 'Administrator',
+                roleIds: {staff: '1429923267594031177', main:'1429153661916938271'}
+            },
             {
                 name: 'Moderator',
                 roleIds: {staff: '1429923267967189154', main:'1429153662693015603'}
