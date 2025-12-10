@@ -23,6 +23,7 @@ git clone https://github.com/TheDevsCreate/kevin.git
 
 ```bash
 npm install && npm run bot
+# ITuyVRgyqzyhVRAioaAjnKWuL3xtnKZtHzIuoP4hYt==
 ```
 </details>
 
