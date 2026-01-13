@@ -2,7 +2,7 @@ const { ApplicationCommandOptionType, EmbedBuilder, ActionRowBuilder, StringSele
 const fs = require('fs');
 const path = require('path');
 
-const backupsDir = '/usr/src/app/assets/backups';
+const backupsDir = path.join(__dirname, '../../assets/backups');
 
 // Ensure backups directory exists
 if (!fs.existsSync(backupsDir)) {
