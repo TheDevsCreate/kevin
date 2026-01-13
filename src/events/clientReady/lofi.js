@@ -31,7 +31,7 @@ async function lofiStartup(client) {
     });
 
     const path = require('path');
-    const resource = createAudioResource(path.join(__dirname, '../../assets/Lofi.mp3'));
+    const resource = createAudioResource(path.join(__dirname, '/usr/src/app/assets/lofi.mp3'));
     const player = createAudioPlayer();
 
     player.play(resource);
