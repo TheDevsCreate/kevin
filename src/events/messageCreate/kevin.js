@@ -1,5 +1,6 @@
 const { ChannelType } = require('discord.js');
 const { getKevinResponse, splitResponse, addToHistory } = require('../../utils/kevinAI');
+const { executeAction, parseAction } = require('../../utils/kevinActions');
 
 const OWNER_ID = '1144267370769174608';
 const KEVIN_CHANNEL_ID = '1446668545709703239';
@@ -24,6 +25,30 @@ module.exports = async (message, client) => {
             .replace(`<@${client.user.id}>`, '')
             .replace(`<@!${client.user.id}>`, '')
             .trim();
+
+        // Check if this is an action command (only for owner when Kevin is mentioned)
+        if (isKevinMentioned && isOwner) {
+            const action = await parseAction(content, message);
+            if (action.action !== 'unknown') {
+                const actionResponse = await executeAction(message, action, client);
+                if (actionResponse) {
+                    try {
+                        await message.reply({
+                            content: actionResponse,
+                            allowedMentions: { repliedUser: false }
+                        });
+                    } catch (replyError) {
+                        if (replyError.code === 50035) {
+                            await message.channel.send({
+                                content: actionResponse,
+                                allowedMentions: { repliedUser: false }
+                            });
+                        }
+                    }
+                    return;
+                }
+            }
+        }
 
         // If replying to a message, include that context
         if (message.reference) {
